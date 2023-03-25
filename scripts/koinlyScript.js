@@ -1,4 +1,3 @@
-// init
 let transactions = []
 
 const getCostBase = (row) => {
@@ -68,9 +67,3 @@ const harvestPage = () => {
 const exportTransactionsToJSON = () => {
     downloadObjectAsJson(transactions, "kTransactions")
 }
-
-// exec every page
-harvestPage()
-
-// export and clear storage
-exportTransactionsToJSON()
